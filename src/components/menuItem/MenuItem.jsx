@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const MenuItem = ({ title, imageUrl, size, linkUrl, history, match }) => {
   const navigate = useNavigate()
   return (
-    <div className={`${size} menu-item`} onClick={() => navigate(`hats`)}>
+    <div className={`${size} menu-item`} onClick={() => navigate(`${linkUrl}`)}>
       <div
         style={{ backgroundImage: `url(${imageUrl})` }}
         className='background-image'
